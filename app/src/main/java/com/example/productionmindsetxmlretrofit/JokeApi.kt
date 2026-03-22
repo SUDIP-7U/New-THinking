@@ -1,0 +1,9 @@
+package com.example.productionmindsetxmlretrofit
+
+import retrofit2.Response
+import retrofit2.http.GET
+
+interface JokeApi {
+    @GET("joke/Any")
+    suspend fun getJoke(): Response<JokeResponse>
+}
